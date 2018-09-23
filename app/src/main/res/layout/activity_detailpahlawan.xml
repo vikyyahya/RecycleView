@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".detailPahlawan">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_margin="16dp"
+                    android:id="@+id/img_foto_detail"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="40dp"
+                    >
+                    <TextView
+                       style="@style/style_title"
+                        android:text="Nama"
+                        android:id="@+id/tv_nama_detail"/>
+                    <TextView
+                        style="@style/style_title"
+                        android:text="Remark"
+                        android:id="@+id/tv_remark_detail"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <TextView
+            android:text="Deskripsi"
+            style="@style/style_deskripsi"
+            android:id="@+id/tv_deskripsi"
+            />
+        <TableLayout
+            style="@style/style_table">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp">
+                <TextView
+                    style="@style/style_title2"
+                    android:text="Lahir"/>
+                <TextView
+                    android:id="@+id/tv_Lahir"
+                    style="@style/style_title2"
+                    android:text="Content ahir" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp">
+                <TextView
+                    style="@style/style_title2"
+                    android:text="Wafat"/>
+                <TextView
+                    style="@style/style_title2"
+                    android:id="@+id/tv_Wafat"
+                    android:text="Wafat"/>
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
